@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Extra Project 02 - Explorer - Stage 02</title>
+    <title>Extra Project 03 - Explorer - Stage 03</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +13,87 @@
     />
   </head>
   <body>
-    
+    <div class="page">
+      <header>
+        <h1>Evaluate your mentoring</h1>
+        <p>The time has come to evaluate your mentor. Let's go there?</p>
+        <img src="assets/img1.svg" alt="Illustration" />
+      </header>
+
+      <legend>Personal information</legend>
+      <form id="form">
+        <fieldset>
+          <div class="col-2">
+            <div class="input-wrapper">
+              <label for="name">Name</label>
+              <input type="text" id="name" required />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="surname">Surname</label>
+              <input type="text" id="surname" />
+            </div>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="email">Email <span>(type a valid email)</span></label>
+            <input type="email" id="email" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Mentor Information</legend>
+
+            <div class="col-2">
+              <div class="input-wrapper">
+                <label for="mentor">Select who was your mentor</label>
+                <select id="mentor">
+                  <option value="emanuel">Emanuel</option>
+                  <option value="joao">João</option>
+                  <option value="maria">Maria</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="feedback">Feedback about the mentor</label>
+              <textarea id="feedback"></textarea>
+            </div>
+
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="approve" />
+              <label for="approve"
+                >All my doubts were clarified during the mentoring.</label
+              >
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Scheduling next mentorship</legend>
+
+            <div class="col-3">
+              <div class="input-wrapper">
+                <label for="date">Date <span>(DD/MM/AAAA)</span></label>
+                <input type="date" id="date" />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="from">From</label>
+                <input type="time" id="from" />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="until">Until</label>
+                <input type="time" id="until" />
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <input type="submit" value="Save" form="form" />
+      </form>
+    </div>
   </body>
 </html>
